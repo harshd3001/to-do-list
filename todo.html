@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="todo.css">
+    <script defer src="todo.js"></script>
+</head>
+<body>
+    <h1>Stuff i need to do</h1>
+    <div class="parent">
+    <div class="lists">
+        <h2>My lists</h2>
+        <p class="error"></p>
+        <ul class="list">
+        </ul>
+        <form class="add">
+        <button type="submit"><i class="fas fa-plus"></i></button>
+        <input type="text" class="newlist" id="newlist" placeholder="new list name">
+        </form>
+    </div>
+    <div class="tasks">
+        <h3 class='list-name'></h3>
+        <p id="rem">Remaining tasks</p>
+        <div class="task">
+           <div class="tasked"></div>
+           <form class="add-task">
+            <button type="submit"><i class="fas fa-plus"></i></button>
+            <input type="text" class="newtask" id="newtask" placeholder="new task name">
+            </form>
+            <div class="clear-comp-task" onclick="clear_comp_tsk()">Clear completed tasks</div>
+            <div class="del-list"onclick='dele_list()'>Delete list</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
